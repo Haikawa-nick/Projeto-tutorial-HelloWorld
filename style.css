@@ -1,0 +1,97 @@
+/* Paleta de cores suave e moderna */
+:root {
+    --cor-fundo: #f4f4f9;  
+    --cor-texto: #333333;  
+    --cor-destaque: #4CAF50;  
+    --cor-laranja: #FF8C00;  
+    --cor-borda: #dcdcdc;  
+    --cor-fundo-header: #ffffff; 
+    --cor-fundo-footer: #f4f4f9; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--cor-fundo-header);
+    border-bottom: 2px solid var(--cor-borda);
+    padding: 20px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+}
+
+#nome-usuário {
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    color: var(--cor-laranja);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p .texto-inglês {
+    font-style: italic;
+    color: var(--cor-laranja);
+}
+
+footer {
+    background-color: var(--cor-fundo-footer);
+    border-top: 2px solid var(--cor-borda);
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
